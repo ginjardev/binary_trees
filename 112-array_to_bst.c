@@ -22,6 +22,7 @@ bst_t *array_to_bst(int *array, size_t size)
 			if (array[m] == array[n])
 				break;
 		}
+
 		if (m == n)
 		{
 			if (bst_insert(&bs_tree, array[n]) == NULL)
